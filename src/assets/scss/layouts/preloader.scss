@@ -1,0 +1,69 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 30px;
+
+    &-line,
+    &:before,
+    &:after {
+      position: absolute;
+      display: block;
+      width: 6px;
+      height: 100%;
+      background: $blue;
+    }
+    
+    &-line {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: wave 0.9s linear infinite 0.3s;
+    }
+    
+    &:before,
+    &:after {
+      content: "";
+    }
+    
+    &:before {
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      animation: wave 0.9s linear infinite;
+    }
+    
+    &:after {
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      animation: wave 0.9s linear infinite 0.6s;
+    }
+  }
+}
+
+@keyframes wave {
+  0% {
+      height: 100%
+  }
+  40% {
+      height: 10%;
+  }
+  80% {
+      height: 100%;
+  }
+  100% {
+      height: 100%;
+  }
+}
+

@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'normalize';
+@import 'general/general';
+
+/***************************
+ FORM ELEMENTS
+****************************/
+@import 'forms/forms';
+
+/***************************
+ ANIMATION
+****************************/
+@import 'animation/animation';
+
+/***************************
+ LAYOUTS
+****************************/
+@import 'layouts/container';
+@import 'layouts/widget';
+@import 'layouts/preloader';

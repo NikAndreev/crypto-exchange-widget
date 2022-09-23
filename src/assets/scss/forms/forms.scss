@@ -1,0 +1,49 @@
+.btn {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.15;
+    padding: 16px 60px;
+    border: none;
+    text-transform: uppercase;
+    transition: background 0.25s;
+    user-select: none;
+
+    @media (min-width: $md) {
+        width: auto;
+    }
+
+    &_color_blue {
+        color: $white;
+        background: $blue;
+
+        &:hover {
+            background: $blue-dark;
+        }
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+.input {
+    padding: 13px 16px;
+    border-radius: 5px;
+    background: $grey;
+    border: 1px solid $grey-dark;
+    font-size: 16px;
+    line-height: 1.4;
+    outline: none;
+    transition: box-shadow 0.25s; 
+
+    &:focus {
+        box-shadow: 0px 0px 8px $blue;
+    }
+}

@@ -1,0 +1,17 @@
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+
+body {
+    background: $background-color;
+    font-family: 'Vollkorn', serif;
+    font-weight: normal; 
+    font-style: normal;
+    line-height: 1.4;
+    color: $text-color-default;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
